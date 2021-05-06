@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Dapper/2.0.90": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {}
+        }
+      },
       "EPPlus/4.5.2.1": {
         "type": "package",
         "dependencies": {
@@ -192,6 +201,15 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "MySqlConnector/1.3.8": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/MySqlConnector.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.1": {
@@ -1429,6 +1447,24 @@
     }
   },
   "libraries": {
+    "Dapper/2.0.90": {
+      "sha512": "e4YjOLJptnpwHIbP8HxjaYf7So9lhUC43rvvGMEkH4Q4CiVlm4rOxYDo0HyuHlMQKj0U5Ob/nCMm52TUhTaZQg==",
+      "type": "package",
+      "path": "dapper/2.0.90",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.90.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
     "EPPlus/4.5.2.1": {
       "sha512": "/OzYn/n982Ozu+ARWISjn9REIb3PA5KN8qPfp3JKOoSnBezN3loGCQ2k0nLNL5K8+b+3boinsNiRbm5ovEfeog==",
       "type": "package",
@@ -1688,6 +1724,37 @@
         "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "MySqlConnector/1.3.8": {
+      "sha512": "zxE+MDrpfPLEUvkUR73brSLiWwDtp5yoNmEk5vEj0vzoVJmR2lBJcOPowigbkR305lM2IKgCL8TP1iIC9xSi7A==",
+      "type": "package",
+      "path": "mysqlconnector/1.3.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/netcoreapp2.1/MySqlConnector.dll",
+        "lib/netcoreapp2.1/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard1.3/MySqlConnector.dll",
+        "lib/netstandard1.3/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.1.3.8.nupkg.sha512",
+        "mysqlconnector.nuspec"
       ]
     },
     "Newtonsoft.Json/10.0.1": {
@@ -5170,24 +5237,26 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Dapper >= 2.0.90",
       "EPPlus >= 4.5.2.1",
-      "Microsoft.AspNetCore.Http.Features >= 5.0.5"
+      "Microsoft.AspNetCore.Http.Features >= 5.0.5",
+      "MySqlConnector >= 1.3.8"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ntquan\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ntquan\\Desktop\\MISA.Import\\MISA.Import.Application\\MISA.Import.Application.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\ImportExcel\\MISA.Import.Application\\MISA.Import.Application.csproj",
       "projectName": "MISA.Import.Application",
-      "projectPath": "C:\\Users\\ntquan\\Desktop\\MISA.Import\\MISA.Import.Application\\MISA.Import.Application.csproj",
-      "packagesPath": "C:\\Users\\ntquan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ntquan\\Desktop\\MISA.Import\\MISA.Import.Application\\obj\\",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\ImportExcel\\MISA.Import.Application\\MISA.Import.Application.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\ImportExcel\\MISA.Import.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ntquan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5213,6 +5282,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.90, )"
+          },
           "EPPlus": {
             "target": "Package",
             "version": "[4.5.2.1, )"
@@ -5220,6 +5293,10 @@
           "Microsoft.AspNetCore.Http.Features": {
             "target": "Package",
             "version": "[5.0.5, )"
+          },
+          "MySqlConnector": {
+            "target": "Package",
+            "version": "[1.3.8, )"
           }
         },
         "imports": [
@@ -5237,7 +5314,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

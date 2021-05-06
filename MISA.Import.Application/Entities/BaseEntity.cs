@@ -30,5 +30,10 @@ namespace MISA.Import.Application.Entities
         /// người sửa
         /// </summary>
         public string ModifiedBy { get; set; }
+
+        /// <summary>
+        /// thông báo lỗi của từng trường
+        /// </summary>
+        public string ListError { get; set; }
     }
 }

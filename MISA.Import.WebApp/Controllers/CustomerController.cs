@@ -11,7 +11,10 @@ using System.Threading.Tasks;
 
 namespace MISA.Import.WebApp.Controllers
 {
-    [Route("api/[controller]")]
+    /// <summary>
+    /// Controller khách hàng
+    /// </summary>
+    [Route("api/v1/[controller]s")]
     [ApiController]
     public class CustomerController : ControllerBase
     {

@@ -10,3 +10,15 @@ C:\Users\ntquan\Desktop\MISA.Import\MISA.Import.Application\bin\Debug\net5.0\MIS
 C:\Users\ntquan\Desktop\MISA.Import\MISA.Import.Application\obj\Debug\net5.0\MISA.Import.Application.dll
 C:\Users\ntquan\Desktop\MISA.Import\MISA.Import.Application\obj\Debug\net5.0\ref\MISA.Import.Application.dll
 C:\Users\ntquan\Desktop\MISA.Import\MISA.Import.Application\obj\Debug\net5.0\MISA.Import.Application.pdb
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\bin\Debug\net5.0\MISA.Import.Application.deps.json
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\bin\Debug\net5.0\MISA.Import.Application.dll
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\bin\Debug\net5.0\ref\MISA.Import.Application.dll
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\bin\Debug\net5.0\MISA.Import.Application.pdb
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\obj\Debug\net5.0\MISA.Import.Application.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\obj\Debug\net5.0\MISA.Import.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\obj\Debug\net5.0\MISA.Import.Application.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\obj\Debug\net5.0\MISA.Import.Application.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\obj\Debug\net5.0\MISA.Import.Application.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\obj\Debug\net5.0\MISA.Import.Application.dll
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\obj\Debug\net5.0\ref\MISA.Import.Application.dll
+C:\Users\ASUS\Desktop\ImportExcel\MISA.Import.Application\obj\Debug\net5.0\MISA.Import.Application.pdb
