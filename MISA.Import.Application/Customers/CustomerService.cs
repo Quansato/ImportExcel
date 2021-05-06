@@ -39,26 +39,30 @@ namespace MISA.Import.Application.Customers
 
                     for (int row = 3; row <= rowCount; row++)
                     {
-                        //var sDate = worksheet.Cells[row, 6].Value.ToString();
+                        var date2 = worksheet.Cells[row, 6].Value.ToString();
+                        var authorsList = date2.Split("/");
+                        var sDate = authorsList[3] + "-" + authorsList[2] + "-" + authorsList[1];
+                        var sDate2 = "01-01-01";
 
                         //double date = double.Parse(sDate);
 
+                        DateTime dt = DateTime.ParseExact(sDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
                         //var dateTime = DateTime.FromOADate(date).ToString("MMMM dd, yyyy");
-
+                        //var date2 = worksheet.Cells[row, 6].Value.ToString();
                         list.Add(new Customer
                         {
-                           CustomerCode = worksheet.Cells[row, 1].Value.ToString().Trim(),
-                           FullName = worksheet.Cells[row, 2].Value.ToString().Trim(),
-                           MemberCardCode = worksheet.Cells[row, 3].Value.ToString().Trim(),
-                           CustomerGroupName = worksheet.Cells[row, 4].Value.ToString().Trim(),
-                           PhoneNumber = worksheet.Cells[row, 5].Value.ToString().Trim(),
-                           //DateOfBirth = Convert.ToDateTime(worksheet.Cells[row, 6].Value.ToString()),                          
-                           //DateOfBirth = DateTime.Parse(birthday),
-                           CompanyName = worksheet.Cells[row, 7].Value.ToString().Trim(),
-                           CompanyTaxCode = worksheet.Cells[row, 8].Value.ToString().Trim(),
-                           Email = worksheet.Cells[row, 9].Value.ToString().Trim(),
-                           Address = worksheet.Cells[row, 10].Value.ToString().Trim(),
-                           Description = worksheet.Cells[row, 11].Value.ToString().Trim(),
+                            CustomerCode = worksheet.Cells[row, 1].Value.ToString().Trim(),
+                            FullName = worksheet.Cells[row, 2].Value.ToString().Trim(),
+                            MemberCardCode = worksheet.Cells[row, 3].Value.ToString().Trim(),
+                            CustomerGroupName = worksheet.Cells[row, 4].Value.ToString().Trim(),
+                            PhoneNumber = worksheet.Cells[row, 5].Value.ToString().Trim(),
+                            //DateOfBirth = Convert.ToDateTime(worksheet.Cells[row, 6].Value.ToString()),                          
+                            //DateOfBirth = DateTime.Parse(birthday),
+                            CompanyName = worksheet.Cells[row, 7].Value.ToString().Trim(),
+                            CompanyTaxCode = worksheet.Cells[row, 8].Value.ToString().Trim(),
+                            Email = worksheet.Cells[row, 9].Value.ToString().Trim(),
+                            Address = worksheet.Cells[row, 10].Value.ToString().Trim(),
+                            Description = worksheet.Cells[row, 11].Value.ToString().Trim(),
                         });
                     }
                 }
@@ -66,6 +70,11 @@ namespace MISA.Import.Application.Customers
 
             return ServiceResult<List<Customer>>.GetResult(200, "OK", list);
         }
+
+        //public string FormatDateTime(string value)
+        //{
+
+        //}
 
         public Task<int> Insert()
         {
